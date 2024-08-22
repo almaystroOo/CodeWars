@@ -9,6 +9,9 @@ public class SolutionTest {
     public void BasicTests() {
         assertEquals(16, Kata.sum(new int[] { 6, 2, 1, 8, 10}));
         assertEquals(16, Kata.sum(new int[] { 6, 2, 1, 123, 123}));
+                assertEquals(16, Kata.sum(new int[] { 6, 2, 1, 1, 123})
+
+                );
 
     }
 }
