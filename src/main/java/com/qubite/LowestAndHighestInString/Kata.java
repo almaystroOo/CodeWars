@@ -7,7 +7,7 @@ public class Kata {
         // Code here or
         List<Integer> numberList = Arrays.stream(numbers.split("\\s+"))
                 .map(Integer::parseInt)
-                .collect(Collectors.toList());
+                .toList();
         int lowest = numberList.stream().min(Integer::compareTo).orElseThrow();
         int highest = numberList.stream().max(Integer::compareTo).orElseThrow();
         return highest + " " + lowest ;
