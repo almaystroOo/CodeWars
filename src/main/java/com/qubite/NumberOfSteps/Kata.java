@@ -6,22 +6,21 @@ import java.util.List;
 public class Kata {
     public static int numberOfSteps(int num) {
         // check if num is even ? if devide by 2
-        // need var to store n steps and var to hold working number
+        // need var to store n steps and var to hold working num
         // need to iterate with a flag ?
         int steps = 0;
-        int number=num;
-        while(number>0){
+        while(num>0){
 
-            if(number % 2 ==0){
-                number  = number / 2;
+            if(num % 2 ==0){
+                num  = num / 2;
 
             } else {
-                number-=1;
+                num-=1;
             }
             steps+=1;
-//            else if(number % 2 > 0 && number !=0 ){
-//                number--;
-//                System.out.println(number);
+//            else if(num % 2 > 0 && num !=0 ){
+//                num--;
+//                System.out.println(num);
 //                steps++;
 //                System.out.println(steps);
 //            }else{
